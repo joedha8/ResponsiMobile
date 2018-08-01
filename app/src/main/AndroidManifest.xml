@@ -17,6 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".FormActivity"></activity>
+        <provider
+            android:authorities="com.gmail.yudhapratama539"
+            android:name=".provider.WhislistProvider"
+            android:exported="true"
+            android:readPermission="com.piusanggoro.catetanku.READ_DATABASE"
+            android:writePermission="com.piusanggoro.catetanku.WRITE_DATABASE" />
     </application>
 
 </manifest>

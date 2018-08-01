@@ -59,7 +59,8 @@ public class RecyclerViewWhislist extends RecyclerView.Adapter<RecyclerViewWhisl
 
     @Override
     public int getItemCount() {
-        return 0;
+        if (listNotes == null) return 0;
+        return listNotes.getCount();
     }
 
     private Whislist getItem(int position) {

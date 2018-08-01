@@ -80,12 +80,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             adapter.setListWishes(list);
             adapter.notifyDataSetChanged();
 
-            try {
-                if (list.getCount() == 0) {
-                    showSnackbarMessage("Tidak ada data saat ini");
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
+            if (list.getCount() == 0) {
+                showSnackbarMessage("Tidak ada data saat ini");
             }
         }
     }
